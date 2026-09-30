@@ -11,15 +11,15 @@ You can complete this task on the worksheet pdf if you prefer.
 |     Command                 |     Explanation    |
 |-----------------------------|--------------------|
 |     pwd                     | shows the current location of the terminal |
-|     ls                      | |
-|     cd directory_name       | |
-|     cd ..                   | |
-|     cd -                    | |
-|     mkdir directory_name    | |
-|     touch filename          | |
-|     git status              | |
-|     git add -A              | |
-|     git commit -m ""        | |
-|     git push                | |
-|     git pull                | |
+|     ls                      | displays a list of directory contents |
+|     cd directory_name       | change directory to directory_name |
+|     cd ..                   | change directory to a directory above |
+|     cd -                    | change directory to the previous directory |
+|     mkdir directory_name    | make directory called directory_name
+|     touch filename          | makes a file titled filename |
+|     git status              | shows file statuses e.g. files in the staging area |
+|     git add -A              | add all edits to the staging area |
+|     git commit -m ""        | record the staged changes and the reason for editing files in the staging area |
+|     git push                | pushes commits from the codespace to the remote source |
+|     git pull                | pulls commits from the remote source to the codespace |
 
