@@ -3,6 +3,15 @@
 # You are going to write a very simple program:
 
 # Ask a user to enter two numbers (one per input)
+number1 = int(input("Enter a number: "))
+number2 = int(input("Enter a number: "))
+
+if number1.isdigit() == True and number2.isdigit() == True:
+    result = number1*number2
+    print(result)
+else:
+    print("That is not a number.")
+
 
 # multiply those numbers together
 

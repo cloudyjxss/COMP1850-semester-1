@@ -13,14 +13,16 @@ for row in data:
 
     # minutes_late is the number of minutes late a submission was made
     minutes_late = int(row[1])
+    hours_late = minutes_late // 60
+    days_late = hours_late//60
 
     # for each of these, we need to work out how to turn 'minutes_late' into the right value
     # for example: if minutes_late is 2000, then days = 1, hours = 9, minutes = 20
     # hint: there are 1440 minutes in a day (24 * 60)
     
-    days = 0
-    hours = 0
-    minutes = 0
+    days = days_late
+    hours = hours_late
+    minutes = minutes_late
     
     print(f"Student {row[0]}: {days}D {hours}H {minutes}M")
 
