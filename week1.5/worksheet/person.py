@@ -1,8 +1,6 @@
 # Worksheet 1.5: Person class
 from datetime import datetime as d
 
-from datetime import date
-
 class Person:
     """
     A Person, with a name and a date of birth.
@@ -16,7 +14,7 @@ class Person:
             raise TypeError
         elif not isinstance(birth, d):
             raise TypeError
-        elif self.name.isEmpty() == True:
+        elif len(self.name) == 0:
             raise ValueError
 
     def initials(self):
@@ -26,12 +24,13 @@ class Person:
         for i in range(len(self.name)):
             if self.name[i] == " ":
                 initialList = initialList + self.name[i+1]
+        initialList = initialList.upper()
         return initialList
 
-    def isbirthday(self):
+    def is_birthday(self):
         """If today is the birtday checker"""
         today = d.today()
-        if self.birth == today:
+        if self.birth.strftime("%d") == today.strftime("%d") and self.birth.strftime("%b") == today.strftime("%b"):
             return True
         else:
             return False
