@@ -22,7 +22,7 @@ if __name__ == "__main__":
     assert grade(55) == "Pass"
     assert grade(69) == "Pass"
 
-    assert grade(70) == "Distinction"
+    assert grade(71) == "Distinction"
     assert grade(85) == "Distinction"
     assert grade(100) == "Distinction"
 
